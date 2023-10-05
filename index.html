@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Interactive Rating Component</title>
+</head>
+
+<body>
+  <main id="main-body">
+
+    <!--Rating State Start-->
+    <div id="rating-state" style="display:block;">
+
+      <div id="star-container">
+        <img src="assets/images/icon-star.svg" alt="star" id="star-image">
+      </div>
+
+      <h1 id="main-heading">How did we do?</h1>
+
+      <p id="main-para">Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+
+      <div id="rating-component">
+        <span onclick="select(1)" ondblclick="remove()" class="rating">1</span>
+        <span onclick="select(2)" ondblclick="remove()" class="rating">2</span>
+        <span onclick="select(3)" ondblclick="remove()" class="rating">3</span>
+        <span onclick="select(4)" ondblclick="remove()" class="rating">4</span>
+        <span onclick="select(5)" ondblclick="remove()" class="rating">5</span>
+      </div>
+
+      <input type="submit" onclick="submitForm()" id="submit-button" value="SUBMIT">
+
+    </div>
+    <!--Rating State End-->
+
+    <!--Thank You State Start-->
+    <div id="thankyou-state" style="display:none;">
+
+      <img src="assets/images/illustration-thank-you.svg" alt="thank you" id="thankyou-image">
+
+      <p id="rating-para">You selected 0 out of 5</p>
+
+      <h1 id="tahnkyou-heading">Thank you!</h1>
+
+      <p id="thankyou-para">We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+
+    </div>
+    <!--Thank You State End-->
+  </main>
+
+  <!--JavaScript-->
+  <script src="assets/script.js"></script>
+</body>
+
+</html>

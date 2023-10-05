@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(216, 12%, 8%);
+    color: white;
+    padding: 15px;
+    perspective: 1000px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#main-body {
+    background: linear-gradient(hsl(214, 21%, 15%), hsl(215, 27%, 12%));
+    border-radius: 20px;
+    padding: 35px;
+    max-width: 345px;
+    min-height: 350px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+#rating-state {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#star-container {
+    background: hsl(212, 20%, 20%);
+    height: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 30px 0;
+}
+
+#main-heading {
+    margin-bottom: 10px;
+}
+
+#main-para {
+    line-height: 1.6;
+}
+
+#rating-component {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.rating {
+    height: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: hsl(212, 19%, 18%);
+    color: hsl(216, 12%, 54%);
+    border: 0;
+    margin: 10px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating:hover {
+    background: hsl(217, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.rating:active {
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.rating-color {
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+#submit-button {
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border: 0;
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+#thankyou-state {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#rating-para {
+    color: hsl(25, 97%, 53%);
+    background: hsl(212, 19%, 18%);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 55%;
+    margin: 30px auto 35px auto;
+}
+
+#thankyou-para {
+    line-height: 1.6;
+}
